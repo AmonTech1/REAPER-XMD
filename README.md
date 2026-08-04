@@ -259,6 +259,20 @@ jobs:
 ## 🌐 JOIN OUR SUPPORT CHANNELS
 
 <p align="center">
+  <a href="https://whatsapp.com/channel/0029VbBaJvI7IUYbtCeaPh0I" target="_blank">
+    <img src="https://img.shields.io/badge/-WhatsApp%20Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=1a1a1a" alt="WhatsApp Channel"/>
+  </a>
+
+  <a href="https://chat.whatsapp.com/EO2LE6eq110Cx4GeuRPPbO?s=cl&p=a&ilr=4" target="_blank">
+    <img src="https://img.shields.io/badge/-WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=1a1a1a" alt="WhatsApp Group"/>
+  </a>
+
+  <a href="https://t.me/reaper_xmd_assistant_bot" target="_blank">
+    <img src="https://img.shields.io/badge/-Telegram%20Support-0088cc?style=for-the-badge&logo=telegram&logoColor=white&labelColor=1a1a1a" alt="Telegram Support"/>
+  </a>
+</p>
+
+<p align="center">
   <img src="https://i.imgur.com/LyHic3i.gif" alt="footer divider"/>
 </p>
 

@@ -1,6 +1,6 @@
 {
   "name": "reaper-xmd",
-  "version": "6.0.0",
+  "version": "1.0.0",
   "description": "High performance multi-device WhatsApp bot",
   "type": "module",
   "main": "index.js",
@@ -39,7 +39,7 @@
     "url": "https://github.com/AmonTech1/REAPER-XMD/issues"
   },
   "license": "MIT",
-  "author": "Qasim Ali",
+  "author": "Amon",
   "dependencies": {
     "@hapi/boom": "^10.0.1",
     "@whiskeysockets/baileys": "^7.0.0-rc14",

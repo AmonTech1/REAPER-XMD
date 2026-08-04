@@ -1,0 +1,88 @@
+{
+  "name": "reaper-xmd",
+  "version": "6.0.0",
+  "description": "High performance multi-device WhatsApp bot",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "assets": "assets",
+    "lib": "lib",
+    "data": "data",
+    "plugins": "plugins"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start:optimized": "node --max-old-space-size=512 --optimize-for-size --gc-interval=100 index.js",
+    "start:fresh": "node reset-data.js && node index.js",
+    "dev": "nodemon --watch . --ext js --ignore node_modules --ignore data --ignore session --ignore temp index.js",
+    "reset-data": "node reset-data.js",
+    "reset-session": "node -e \"import('fs').then(f=>f.default.rmSync('./session',{recursive:true,force:true})).then(()=>console.log('Session cleared!'))\"",
+    "build": "echo 'No build step needed - plain JS'",
+    "lint": "eslint . --ext .js",
+    "test": "vitest run",
+    "test:unit": "vitest run test/unit",
+    "test:integration": "vitest run test/integration",
+    "test:watch": "vitest",
+    "audit": "npm audit --omit=dev"
+  },
+  "keywords": [
+    "whatsapp-bot",
+    "baileys-bot",
+    "reaper-xmd"
+  ],
+  "homepage": "https://github.com/AmonTech1/REAPER-XMD",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmonTech1/REAPER-XMD.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AmonTech1/REAPER-XMD/issues"
+  },
+  "license": "MIT",
+  "author": "Qasim Ali",
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "^7.0.0-rc14",
+    "acrcloud": "^1.4.0",
+    "adm-zip": "^0.5.16",
+    "api-qasim": "^3.2.10",
+    "awesome-phonenumber": "^5.9.0",
+    "axios": "^1.8.4",
+    "better-sqlite3": "^12.5.0",
+    "chalk": "^5.6.2",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.4.5",
+    "express": "^4.22.1",
+    "file-type": "^21.3.4",
+    "form-data": "^4.0.1",
+    "gspeak": "^0.0.3",
+    "human-readable": "^0.2.1",
+    "install": "^0.13.0",
+    "libphonenumber-js": "^1.11.18",
+    "megajs": "^1.3.9",
+    "moment-timezone": "^0.5.43",
+    "mongoose": "^9.0.2",
+    "mumaker": "^2.0.0",
+    "mysql2": "^3.16.0",
+    "node-cache": "^5.1.2",
+    "node-webpmux": "^3.1.0",
+    "npm": "^11.19.0",
+    "pg": "^8.16.3",
+    "qrcode": "^1.5.4",
+    "ruhend-scraper": "*",
+    "sharp": "^0.34.0",
+    "simple-git": "^3.30.0",
+    "stickers-formatter": "^0.0.2",
+    "syntax-error": "^1.4.0",
+    "yt-search": "^2.12.1"
+  },
+  "devDependencies": {
+    "eslint": "^10.0.2",
+    "nodemon": "^3.1.14",
+    "vitest": "^4.0.18"
+  },
+  "overrides": {
+    "minimatch": "^10.2.1",
+    "yargs-parser": "^21.1.1"
+  }
+}

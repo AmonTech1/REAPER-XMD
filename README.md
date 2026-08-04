@@ -243,17 +243,7 @@ jobs:
 ## 🗃️ PROJECT ARCHITECTS
 
 <p align="center">
-  <a href="https://github.com/AmonTech1">
-    <img src="https://github-readme-stats.vercel.app/api?username=AmonTech1&show_icons=true&theme=radical" />
-  </a>
-</p>
-
-<div align="center">
-  <img src="https://github.com/AmonTech1/REAPER XMD/blob/main/assets/futuretech.gif?raw=true" width="100%"/>
-</div>
-
-<p align="center">
-  <img src="https://i.imgur.com/LyHic3i.gif" alt="divider"/>
+  <img src="https://i.imgur.com/LyHic3i.gif" width="100%"/>
 </p>
 
 ## 🌐 JOIN OUR SUPPORT CHANNELS

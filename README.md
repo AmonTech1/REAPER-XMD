@@ -76,6 +76,11 @@ Authenticate using **one** of the methods below to generate your `Session ID`.
   <img src="https://i.imgur.com/LyHic3i.gif" alt="Authentication Flow Preview" />
 </p>
 
+### ⚙️ Step 3: Add Your Session ID in `config.js`
+
+1. **Locate the `config.js` file** 
+2. **Open `config.js`** 
+3. **Find the `SESSION_ID` field** and paste your session ID there.
 
 ## _📡 DEPLOYMENT_
 
@@ -189,13 +194,6 @@ jobs:
         </a>
       </td>
     </tr>
-    <tr>
-      <td colspan="2">
-        <a href="https://dash.hmvhostings.com/register?ref=GKTSTyFY" target="_blank">
-          <img src="https://img.shields.io/badge/HMVHosting-00ACC1?style=for-the-badge&logo=cloudflare&logoColor=white&labelColor=1a1a1a"/>
-        </a>
-      </td>
-    </tr>
   </table>
 </div>
 
@@ -286,7 +284,6 @@ jobs:
 <p align="center"> <img src="https://i.imgur.com/LyHic3i.gif" /> </p> <h2 align="center">💫 Thanks to our loyal followers</h2> <p align="center"> <a href="https://github.com/AmonTech1/REAPER-XMD/stargazers"> <img src="http://reporoster.com/stars/dark/AmonTech1/REAPER-XMD" alt="Stargazers repo roster for @AmonTech1/REAPER-XMD"> </a> </p> <p align="center"> <a href="https://github.com/AmonTech1/REAPER-XMD/network/members"> <img src="http://reporoster.com/forks/dark/AmonTech1/REAPER-XMD" alt="Forkers repo roster for @AmonTech1/REAPER-XMD"> </a> </p> 
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
-
 
 
 

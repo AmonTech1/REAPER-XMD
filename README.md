@@ -70,7 +70,7 @@ Authenticate using **one** of the methods below to generate your `Session ID`.
 
 > 📲 SESSION ID 
 
-[![Get Pairing Code](https://img.shields.io/badge/Get%20Pairing%20Code-orange?style=for-the-badge&logo=opencv&logoColor=black)](https://reaper-xmd-and-benzo-md.onrender.com)
+[![Get Session ID](https://img.shields.io/badge/Get%20Session%20ID-orange?style=for-the-badge&logo=opencv&logoColor=black)](https://reaper-xmd-and-benzo-md.onrender.com)
 
 <p align="center">
   <img src="https://i.imgur.com/LyHic3i.gif" alt="Authentication Flow Preview" />
@@ -82,10 +82,10 @@ Authenticate using **one** of the methods below to generate your `Session ID`.
 <div align="center">
   <table>
     <tr>
-      <td><a href="https://dashboard.heroku.com/new-app?template=https://github.com/AmonTech1/REAPER XMD" target="_blank"><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000000&color=0000FF"/></a></td>
+      <td><a href="https://dashboard.heroku.com/new-app?template=https://github.com/AmonTech1/REAPER-XMD" target="_blank"><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000000&color=0000FF"/></a></td>
     </tr>
     <tr>
-      <td><a href="https://app.koyeb.com/services/deploy?type=git&repository=AmonTech1/REAPER XMD" target="_blank"><img src="https://img.shields.io/badge/Koyeb-FF009D?style=for-the-badge&logo=koyeb&logoColor=white&labelColor=000000"/></a></td>
+      <td><a href="https://app.koyeb.com/services/deploy?type=git&repository=AmonTech1/REAPER-XMD" target="_blank"><img src="https://img.shields.io/badge/Koyeb-FF009D?style=for-the-badge&logo=koyeb&logoColor=white&labelColor=000000"/></a></td>
       <td><a href="https://railway.app/new" target="_blank"><img src="https://img.shields.io/badge/Railway-FF8700?style=for-the-badge&logo=railway&logoColor=white&labelColor=000000"/></a></td>
     </tr>
     <tr>
@@ -95,7 +95,7 @@ Authenticate using **one** of the methods below to generate your `Session ID`.
 </div>
 
 
-<a href="https://sub4unlock.io/ymMe4"><img src="https://img.shields.io/github/forks/AmonTech1/REAPER XMD?style=for-the-badge&logo=github&color=4c1&label=Deploy%20Button-version" alt="Fork REAPER XMD" /></a>
+<a href="https://sub4unlock.io/ymMe4"><img src="https://img.shields.io/github/forks/AmonTech1/REAPER-XMD?style=for-the-badge&logo=github&color=4c1&label=Deploy%20Button-version" alt="Fork REAPER-XMD" /></a>
 
 <br>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/>
@@ -157,8 +157,8 @@ jobs:
 
 > Get the latest REAPER-XMD bot zip file for panel-based deployment:
 
-<div align="left">
-  <a href="https://github.com/AmonTech1/REAPER XMD/archive/refs/heads/main.zip" target="_blank">
+<div align="center">
+  <a href="https://github.com/AmonTech1/REAPER-XMD/archive/refs/heads/main.zip" target="_blank">
     <img alt="Download Panel ZIP" src="https://img.shields.io/badge/View-panel%20Codes-FF0000?style=for-the-badge&logo=bot&logoColor=white"/>
   </a>
 </div>

@@ -68,19 +68,9 @@ Authenticate using **one** of the methods below to generate your `Session ID`.
   <img src="https://i.imgur.com/LyHic3i.gif" alt="Authentication Flow Preview" />
 </p>
 
-> 📲 Pair Code Authentication 1
+> 📲 SESSION ID 
 
-[![Get Pairing Code](https://img.shields.io/badge/Get%20Pairing%20Code-orange?style=for-the-badge&logo=opencv&logoColor=black)](https://session-fl9i.onrender.com)
-
-> 📲 Pair Code Authentication 2
-
-[![Get Pairing Code](https://img.shields.io/badge/Get%20Pairing%20Code-orange?style=for-the-badge&logo=opencv&logoColor=black)](https://session-fl9i.onrender.com)
-
-> 📱 QR Code Authentication 3
-
-[![Scan QR Code](https://img.shields.io/badge/Scan%20QR%20Code-000000?style=for-the-badge&logo=react&logoColor=white)](https://session-fl9i.onrender.com)
-
-
+[![Get Pairing Code](https://img.shields.io/badge/Get%20Pairing%20Code-orange?style=for-the-badge&logo=opencv&logoColor=black)](https://reaper-xmd-and-benzo-md.onrender.com)
 
 <p align="center">
   <img src="https://i.imgur.com/LyHic3i.gif" alt="Authentication Flow Preview" />

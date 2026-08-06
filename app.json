@@ -1,0 +1,53 @@
+{
+  "name": "REAPER-XMD",
+  "description": "WhatsApp bot by Amon Tech",
+  "logo": "https://i.ibb.co/TMMGw0bH/file-30108.jpg",
+  "keywords": ["REAPER-XMD"],
+  "repository": "https://github.com/AmonTech1/REAPER-XMD",
+  "stack": "heroku-24",
+
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Your session ID (must start with benzo~)",
+      "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "Owner's phone number with country code",
+      "value": "2547XXXXXXXX",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "Bot display name",
+      "value": "★彡 [ ℝ𝔼𝔸ℙ𝔼ℝ 𝕏𝕄𝔻 ] 彡★"
+    },
+    "BOT_OWNER": {
+      "description": "Bot owner name",
+      "value": "Amon"
+    },
+    "COMMAND_MODE": {
+      "description": "public, private, inbox, or groups",
+      "value": "public"
+    },
+    "PREFIXES": {
+      "description": "Command prefixes (comma-separated)",
+      "value": "."
+    },
+    "TIMEZONE": {
+      "description": "Your timezone",
+      "value": "Africa/Nairobi"
+    }
+  },
+
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}

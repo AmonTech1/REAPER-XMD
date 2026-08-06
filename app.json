@@ -1,7 +1,7 @@
 {
   "name": "REAPER-XMD",
   "description": "WhatsApp bot by Amon Tech",
-  "logo": "https://i.ibb.co/TMMGw0bH/file-30108.jpg",
+  "logo": "https://github.com/AmonTech1/REAPER-XMD/blob/f6b025701bb30ee9043218166446135e5bcfbcbc/REAPER-XMD.jpg",
   "keywords": ["REAPER-XMD"],
   "repository": "https://github.com/AmonTech1/REAPER-XMD",
   "stack": "heroku-24",

@@ -1,0 +1,29 @@
+{
+  "name": "REAPER-XMD",
+  "description": "WhatsApp bot by Amon Tech",
+  "platform": "whatsapp",
+  "runtime": "node",
+  "version": "18",
+  "main": "index.js",
+  "start": "node index.js",
+  "install": "npm install",
+  "memory_limit": "150MB",
+  "env": {
+    "SESSION_ID": {
+      "description": "Your WhatsApp session ID",
+      "required": true,
+      "type": "string"
+    },
+    "OWNER_NUMBER": {
+      "description": "Owner's phone number with country code",
+      "required": true,
+      "type": "string"
+    },
+    "TIMEZONE": {
+      "description": "Your timezone (e.g., Africa/Nairobi, Asia/Kolkata)",
+      "required": false,
+      "default": "Africa/Nairobi",
+      "type": "string"
+    }
+  }
+}

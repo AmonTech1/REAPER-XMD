@@ -1,53 +1,87 @@
 {
   "name": "REAPER-XMD",
-  "description": "WhatsApp bot by Amon Tech",
-  "logo": "https://github.com/AmonTech1/REAPER-XMD/blob/f6b025701bb30ee9043218166446135e5bcfbcbc/REAPER-XMD.jpg",
-  "keywords": ["REAPER-XMD"],
-  "repository": "https://github.com/AmonTech1/REAPER-XMD",
-  "stack": "heroku-24",
-
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "basic"
-    }
+  "description": "⚡ A lightning-fast WhatsApp bot with multi-device support, built on Node.js & Baileys.",
+  "website": "https://github.com/AmonTech1/REAPER-XMD#readme",
+  "repository": "https://github.com/AmonTech1/REAPER-XMD.git",
+  "logo": "https://raw.githubusercontent.com/AmonTech1/REAPER-XMD/REAPER-XMD.jpg",
+  "success_url": "/",
+  "keywords": [
+    "whatsapp-bot",
+    "baileys",
+    "nodejs",
+    "heroku",
+    "whatsapp bot",
+    "wa bot",
+    "reaper-xmd",
+    "amontech"
+  ],
+  "scripts": {
+    "postdeploy": "echo 'REAPER-XMD has been successfully deployed✅'"
   },
-
+  "build": {
+    "languages": [
+      "nodejs"
+    ]
+  },
   "env": {
     "SESSION_ID": {
-      "description": "Your session ID (must start with benzo~)",
+      "description": "🔑 Required – Your WhatsApp session ID (must start with benzo~).",
       "required": true
     },
     "OWNER_NUMBER": {
-      "description": "Owner's phone number with country code",
-      "value": "2547XXXXXXXX",
-      "required": true
+      "description": "📱 Required – Owner's phone number with country code (e.g., 2547XXXXXXXX).",
+      "required": true,
+      "value": "2547XXXXXXXX"
     },
     "BOT_NAME": {
-      "description": "Bot display name",
+      "description": "🤖 Bot display name",
+      "required": false,
       "value": "★彡 [ ℝ𝔼𝔸ℙ𝔼ℝ 𝕏𝕄𝔻 ] 彡★"
     },
     "BOT_OWNER": {
-      "description": "Bot owner name",
+      "description": "👤 Bot owner name",
+      "required": false,
       "value": "Amon"
     },
     "COMMAND_MODE": {
-      "description": "public, private, inbox, or groups",
+      "description": "⚙️ Bot mode: public, private, inbox, or groups",
+      "required": false,
       "value": "public"
     },
     "PREFIXES": {
-      "description": "Command prefixes (comma-separated)",
+      "description": "🔧 Command prefixes (comma-separated, e.g., .,!,/)",
+      "required": false,
       "value": "."
     },
     "TIMEZONE": {
-      "description": "Your timezone",
+      "description": "🕐 Your timezone (e.g., Africa/Nairobi, Asia/Kolkata)",
+      "required": false,
       "value": "Africa/Nairobi"
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Optional – Your Heroku app name (needed for updating the bot).",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "Optional – Your Heroku API key (only needed for updating the bot).",
+      "required": false
     }
   },
-
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "as": "DATABASE"
+    }
+  ],
   "buildpacks": [
     {
       "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview"
     }
   ]
 }

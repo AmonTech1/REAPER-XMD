@@ -7,7 +7,7 @@
   "main": "index.js",
   "start": "node index.js",
   "install": "npm install",
-  "memory_limit": "512MB",
+  "memory_limit": "200MB",
   "env": {
     "SESSION_ID": {
       "description": "Your WhatsApp session ID (must start with benzo~)",

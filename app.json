@@ -16,32 +16,68 @@
   "env": {
     "SESSION_ID": {
       "description": "Your session ID (must start with benzo~)",
-      "required": true
+      "required": true,
+      "value": ""
     },
     "OWNER_NUMBER": {
-      "description": "Owner's phone number with country code",
-      "value": "2547XXXXXXXX",
-      "required": true
-    },
-    "BOT_NAME": {
-      "description": "Bot display name",
-      "value": "★彡 [ ℝ𝔼𝔸ℙ𝔼ℝ 𝕏𝕄𝔻 ] 彡★"
+      "description": "Owner's phone number with country code (e.g., 2547XXXXXXXX)",
+      "required": true,
+      "value": ""
     },
     "BOT_OWNER": {
       "description": "Bot owner name",
-      "value": "Amon"
+      "required": true,
+      "value": ""
     },
-    "COMMAND_MODE": {
-      "description": "public, private, inbox, or groups",
-      "value": "public"
+    "AUTHOR": {
+      "description": "Author name for stickers",
+      "required": false,
+      "value": ""
+    },
+    "BOT_NAME": {
+      "description": "Bot display name",
+      "required": true,
+      "value": "★彡 [ ℝ𝔼𝔸ℙ𝔼ℝ 𝕏𝕄𝔻 ] 彡★"
+    },
+    "PACKNAME": {
+      "description": "Package name for stickers",
+      "required": false,
+      "value": "★彡 [ ℝ𝔼𝔸ℙ𝔼ℝ 𝕏𝕄𝔻 ] 彡★"
     },
     "PREFIXES": {
-      "description": "Command prefixes (comma-separated)",
+      "description": "Command prefixes (comma-separated, e.g., .,!)",
+      "required": true,
       "value": "."
     },
+    "COMMAND_MODE": {
+      "description": "Command mode: private, public, inbox, or groups",
+      "required": true,
+      "value": "private"
+    },
     "TIMEZONE": {
-      "description": "Your timezone",
+      "description": "Your timezone (e.g., Africa/Nairobi)",
+      "required": true,
       "value": "Africa/Nairobi"
+    },
+    "MONGO_URL": {
+      "description": "MongoDB URL (optional)",
+      "required": false,
+      "value": ""
+    },
+    "POSTGRES_URL": {
+      "description": "PostgreSQL URL - Recommended (e.g., Supabase)",
+      "required": false,
+      "value": ""
+    },
+    "MYSQL_URL": {
+      "description": "MySQL URL (optional)",
+      "required": false,
+      "value": ""
+    },
+    "DB_URL": {
+      "description": "SQLite path (optional)",
+      "required": false,
+      "value": ""
     }
   },
 

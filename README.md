@@ -78,8 +78,8 @@ Authenticate using **one** of the methods below to generate your `Session ID`.
 
 ### ⚙️ Step 3: Add Your Session ID in `config.js`
 
-1. **Locate the `config.js` file** 
-2. **Open `config.js`** 
+1. **Locate the `settings.js` file** 
+2. **Open `settings.js`** 
 3. **Find the `SESSION_ID` field** and paste your session ID there.
 
 ## _📡 DEPLOYMENT_

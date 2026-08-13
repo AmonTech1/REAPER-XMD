@@ -1,54 +1,20 @@
-// settings.js - ALL User Configuration
-// Edit this file to configure your bot
-
+// settings.js – Reads from process.env
 export const settings = {
-    // ========================================
-    // 🔑 SESSION (Required - Choose one)
-    // ========================================
-    
-    // Option 1: Session ID (Recommended)
-    sessionId: "",
-    
-    // Option 2: Pairing Number (Use if no session ID)
-    pairingNumber: "",
-    
-    // ========================================
-    // 👤 OWNER
-    // ========================================
-    
-    ownerNumber: "",
-    botOwner: "",
-    author: "",
-    
-    // ========================================
-    // 🤖 BOT IDENTITY
-    // ========================================
-    
-    botName: "★彡 [ ℝ𝔼𝔸ℙ𝔼ℝ 𝕏𝕄𝔻 ] 彡★",
-    packname: "★彡 [ ℝ𝔼𝔸ℙ𝔼ℝ 𝕏𝕄𝔻 ] 彡★",
-    description: "High performance multi-device WhatsApp bot",
-    
-    // ========================================
-    // ⚙️ COMMANDS
-    // ========================================
-    
-    prefixes: ".",
-    commandMode: "private",
-    
-    // ========================================
-    // 🌍 REGION
-    // ========================================
-    
-    timezone: "Africa/Nairobi",
-    
-    // ========================================
-    // 💾 DATABASE (Optional)
-    // ========================================
-    
-    mongoUrl: "",
-    postgresUrl: "",
-    mysqlUrl: "",
-    dbUrl: "",
+    sessionId: process.env.SESSION_ID || "",
+    pairingNumber: process.env.PAIRING_NUMBER || "",
+    ownerNumber: process.env.OWNER_NUMBER || "",
+    botOwner: process.env.BOT_OWNER || "",
+    author: process.env.AUTHOR || "",
+    botName: process.env.BOT_NAME || "★彡 [ ℝ𝔼𝔸ℙ𝔼ℝ 𝕏𝕄𝔻 ] 彡★",
+    packname: process.env.PACKNAME || "★彡 [ ℝ𝔼𝔸ℙ𝔼ℝ 𝕏𝕄𝔻 ] 彡★",
+    prefixes: process.env.PREFIXES || ".",
+    commandMode: process.env.COMMAND_MODE || "private",
+    timezone: process.env.TIMEZONE || "Africa/Nairobi",
+    mongoUrl: process.env.MONGO_URL || "",
+    postgresUrl: process.env.POSTGRES_URL || "",
+    mysqlUrl: process.env.MYSQL_URL || "",
+    dbUrl: process.env.DB_URL || "", // for SQLite
+    removeBgKey: process.env.REMOVEBG_KEY || "",
+    // Add any missing env vars you need
 };
-
 export default settings;

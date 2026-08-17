@@ -76,7 +76,7 @@ Authenticate using **one** of the methods below to generate your `Session ID`.
   <img src="https://i.imgur.com/LyHic3i.gif" alt="Authentication Flow Preview" />
 </p>
 
-### ⚙️ Step 3: Add Your Session ID in `config.js`
+### ⚙️ Step 3: Add Your Session ID in `settings.js`
 
 1. **Locate the `settings.js` file** 
 2. **Open `settings.js`** 

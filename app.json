@@ -8,28 +8,23 @@
   "env": {
     "SESSION_ID": {
       "description": "Your session ID (get it by running the bot locally first)",
-      "required": true,
-      "value": ""
+      "required": true
     },
     "OWNER_NUMBER": {
-      "description": "Your WhatsApp number with country code",
-      "required": true,
-      "value": ""
+      "description": "Your WhatsApp number with country code (e.g., 254700000000)",
+      "required": true
     },
     "MONGO_URL": {
-      "description": "MongoDB URL for persistent storage (recommended for Heroku)",
-      "required": false,
-      "value": ""
+      "description": "MongoDB URL for persistent storage",
+      "required": false
     },
     "POSTGRES_URL": {
       "description": "PostgreSQL URL for persistent storage",
-      "required": false,
-      "value": ""
+      "required": false
     },
     "MYSQL_URL": {
       "description": "MySQL URL for persistent storage",
-      "required": false,
-      "value": ""
+      "required": false
     },
     "BOT_NAME": {
       "description": "Your bot name",
@@ -63,16 +58,9 @@
     },
     "REMOVEBG_KEY": {
       "description": "Remove.bg API key for background removal",
-      "required": false,
-      "value": ""
+      "required": false
     }
   },
-  "buildpacks": [
-    { "url": "heroku/nodejs" },
-    { "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git" },
-    { "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest" },
-    { "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git" }
-  ],
   "formation": {
     "web": {
       "quantity": 1,

@@ -70,7 +70,7 @@ Authenticate using **one** of the methods below to generate your `Session ID`.
 
 > 📲 SESSION ID 
 
-[![Get Session ID](https://img.shields.io/badge/Get%20Session%20ID-orange?style=for-the-badge&logo=opencv&logoColor=black)](https://reaper-xmd-and-benzo-md.onrender.com)
+[![Get Session ID](https://img.shields.io/badge/Get%20Session%20ID-orange?style=for-the-badge&logo=opencv&logoColor=black)](https://reaper-xmd-session.onrender.com)
 
 <p align="center">
   <img src="https://i.imgur.com/LyHic3i.gif" alt="Authentication Flow Preview" />

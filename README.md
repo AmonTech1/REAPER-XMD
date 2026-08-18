@@ -266,7 +266,8 @@ jobs:
 
 ```diff
 + Project Status: Active
-! Version: V.1.0.0 Smarter Edition 
+! Version: V 2.2.0
+! Alpha Edition 
 ```
 
 

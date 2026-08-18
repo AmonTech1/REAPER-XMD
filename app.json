@@ -1,89 +1,82 @@
 {
-  "name": "REAPER-XMD",
-  "description": "WhatsApp bot by Amon Tech",
+  "name": "reaper-xmd",
+  "description": "High performance multi-device WhatsApp bot",
   "logo": "https://raw.githubusercontent.com/AmonTech1/REAPER-XMD/a3aa6169969c7872247b6beeabd87192d7d33378/REAPER-XMD.jpg",
-  "keywords": ["REAPER-XMD"],
+  "keywords": ["whatsapp-bot", "baileys", "reaper-xmd"],
   "repository": "https://github.com/AmonTech1/REAPER-XMD",
-  "stack": "heroku-24",
-
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "basic"
-    }
-  },
-
+  "stack": "container",
   "env": {
     "SESSION_ID": {
-      "description": "Your session ID (must start with benzo~)",
+      "description": "Your session ID (get it by running the bot locally first)",
       "required": true,
       "value": ""
     },
     "OWNER_NUMBER": {
-      "description": "Owner's phone number with country code (e.g., 2547XXXXXXXX)",
+      "description": "Your WhatsApp number with country code",
       "required": true,
       "value": ""
-    },
-    "BOT_OWNER": {
-      "description": "Bot owner name",
-      "required": true,
-      "value": ""
-    },
-    "AUTHOR": {
-      "description": "Author name for stickers",
-      "required": false,
-      "value": ""
-    },
-    "BOT_NAME": {
-      "description": "Bot display name",
-      "required": true,
-      "value": "★彡 [ ℝ𝔼𝔸ℙ𝔼ℝ 𝕏𝕄𝔻 ] 彡★"
-    },
-    "PACKNAME": {
-      "description": "Package name for stickers",
-      "required": false,
-      "value": "★彡 [ ℝ𝔼𝔸ℙ𝔼ℝ 𝕏𝕄𝔻 ] 彡★"
-    },
-    "PREFIXES": {
-      "description": "Command prefixes (comma-separated, e.g., .,!)",
-      "required": true,
-      "value": "."
-    },
-    "COMMAND_MODE": {
-      "description": "Command mode: private, public, inbox, or groups",
-      "required": true,
-      "value": "private"
-    },
-    "TIMEZONE": {
-      "description": "Your timezone (e.g., Africa/Nairobi)",
-      "required": true,
-      "value": "Africa/Nairobi"
     },
     "MONGO_URL": {
-      "description": "MongoDB URL (optional)",
+      "description": "MongoDB URL for persistent storage (recommended for Heroku)",
       "required": false,
       "value": ""
     },
     "POSTGRES_URL": {
-      "description": "PostgreSQL URL - Recommended (e.g., Supabase)",
+      "description": "PostgreSQL URL for persistent storage",
       "required": false,
       "value": ""
     },
     "MYSQL_URL": {
-      "description": "MySQL URL (optional)",
+      "description": "MySQL URL for persistent storage",
       "required": false,
       "value": ""
     },
-    "DB_URL": {
-      "description": "SQLite path (optional)",
+    "BOT_NAME": {
+      "description": "Your bot name",
+      "required": false,
+      "value": "REAPER-XMD"
+    },
+    "BOT_OWNER": {
+      "description": "Owner display name",
+      "required": false,
+      "value": "Amon"
+    },
+    "PREFIXES": {
+      "description": "Command prefixes separated by comma (e.g. .,!,/)",
+      "required": false,
+      "value": "."
+    },
+    "PACKNAME": {
+      "description": "Sticker pack name",
+      "required": false,
+      "value": "REAPER-XMD"
+    },
+    "COMMAND_MODE": {
+      "description": "Bot mode: public or private",
+      "required": false,
+      "value": "public"
+    },
+    "TIMEZONE": {
+      "description": "Your timezone",
+      "required": false,
+      "value": "Africa/Nairobi"
+    },
+    "REMOVEBG_KEY": {
+      "description": "Remove.bg API key for background removal",
       "required": false,
       "value": ""
     }
   },
-
   "buildpacks": [
-    {
-      "url": "heroku/nodejs"
+    { "url": "heroku/nodejs" },
+    { "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git" },
+    { "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest" },
+    { "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git" }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
     }
-  ]
+  }
 }

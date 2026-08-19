@@ -42,7 +42,7 @@
   "author": "Amon Tech",
   "dependencies": {
     "@hapi/boom": "^10.0.1",
-    "@whiskeysockets/baileys": "^7.0.0-rc13",
+    "@whiskeysockets/baileys": "^7.0.0-rc14",
     "acrcloud": "^1.4.0",
     "adm-zip": "^0.5.16",
     "api-qasim": "^3.2.10",

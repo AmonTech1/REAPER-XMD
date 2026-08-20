@@ -1,70 +1,53 @@
 {
-  "name": "reaper-xmd",
-  "description": "High performance multi-device WhatsApp bot",
+  "name": "REAPER-XMD",
+  "description": "WhatsApp bot by Amon Tech",
   "logo": "https://raw.githubusercontent.com/AmonTech1/REAPER-XMD/a3aa6169969c7872247b6beeabd87192d7d33378/REAPER-XMD.jpg",
-  "keywords": ["whatsapp-bot", "baileys", "reaper-xmd"],
+  "keywords": ["REAPER-XMD"],
   "repository": "https://github.com/AmonTech1/REAPER-XMD",
-  "stack": "container",
-  "env": {
-    "SESSION_ID": {
-      "description": "Your session ID (get it by running the bot locally first)",
-      "required": true
-    },
-    "OWNER_NUMBER": {
-      "description": "Your WhatsApp number with country code (e.g., 254700000000)",
-      "required": true
-    },
-    "MONGO_URL": {
-      "description": "MongoDB URL for persistent storage",
-      "required": false
-    },
-    "POSTGRES_URL": {
-      "description": "PostgreSQL URL for persistent storage",
-      "required": false
-    },
-    "MYSQL_URL": {
-      "description": "MySQL URL for persistent storage",
-      "required": false
-    },
-    "BOT_NAME": {
-      "description": "Your bot name",
-      "required": false,
-      "value": "REAPER-XMD"
-    },
-    "BOT_OWNER": {
-      "description": "Owner display name",
-      "required": false,
-      "value": "Amon"
-    },
-    "PREFIXES": {
-      "description": "Command prefixes separated by comma (e.g. .,!,/)",
-      "required": false,
-      "value": "."
-    },
-    "PACKNAME": {
-      "description": "Sticker pack name",
-      "required": false,
-      "value": "REAPER-XMD"
-    },
-    "COMMAND_MODE": {
-      "description": "Bot mode: public or private",
-      "required": false,
-      "value": "public"
-    },
-    "TIMEZONE": {
-      "description": "Your timezone",
-      "required": false,
-      "value": "Africa/Nairobi"
-    },
-    "REMOVEBG_KEY": {
-      "description": "Remove.bg API key for background removal",
-      "required": false
-    }
-  },
+  "stack": "heroku-24",
+
   "formation": {
-    "web": {
+    "worker": {
       "quantity": 1,
       "size": "basic"
     }
-  }
+  },
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Your session ID (must start with benzo~)",
+      "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "Owner's phone number with country code",
+      "value": "2547XXXXXXXX",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "Bot display name",
+      "value": "★彡 [ ℝ𝔼𝔸ℙ𝔼ℝ 𝕏𝕄𝔻 ] 彡★"
+    },
+    "BOT_OWNER": {
+      "description": "Bot owner name",
+      "value": "Amon"
+    },
+    "COMMAND_MODE": {
+      "description": "public, private, inbox, or groups",
+      "value": "public"
+    },
+    "PREFIXES": {
+      "description": "Command prefixes (comma-separated)",
+      "value": "."
+    },
+    "TIMEZONE": {
+      "description": "Your timezone",
+      "value": "Africa/Nairobi"
+    }
+  },
+
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
 }

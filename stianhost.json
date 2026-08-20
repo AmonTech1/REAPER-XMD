@@ -3,79 +3,26 @@
   "description": "WhatsApp bot by Amon Tech",
   "platform": "whatsapp",
   "runtime": "node",
-  "version": "20",
+  "version": "18",
   "main": "index.js",
   "start": "node index.js",
   "install": "npm install",
   "memory_limit": "200MB",
   "env": {
     "SESSION_ID": {
-      "description": "Your WhatsApp session ID (must start with benzo~)",
+      "description": "Your WhatsApp session ID",
       "required": true,
       "type": "string"
     },
     "OWNER_NUMBER": {
-      "description": "Owner's phone number with country code (e.g., 2547XXXXXXXX)",
+      "description": "Owner's phone number with country code",
       "required": true,
-      "type": "string"
-    },
-    "BOT_OWNER": {
-      "description": "Bot owner name",
-      "required": true,
-      "type": "string"
-    },
-    "BOT_NAME": {
-      "description": "Bot display name",
-      "required": false,
-      "default": "★彡 [ ℝ𝔼𝔸ℙ𝔼ℝ 𝕏𝕄𝔻 ] 彡★",
-      "type": "string"
-    },
-    "PREFIXES": {
-      "description": "Command prefixes (comma-separated, e.g., .,!)",
-      "required": false,
-      "default": ".",
-      "type": "string"
-    },
-    "COMMAND_MODE": {
-      "description": "Command mode: private, public, inbox, or groups",
-      "required": false,
-      "default": "private",
       "type": "string"
     },
     "TIMEZONE": {
       "description": "Your timezone (e.g., Africa/Nairobi, Asia/Kolkata)",
       "required": false,
       "default": "Africa/Nairobi",
-      "type": "string"
-    },
-    "AUTHOR": {
-      "description": "Author name for stickers",
-      "required": false,
-      "type": "string"
-    },
-    "PACKNAME": {
-      "description": "Package name for stickers",
-      "required": false,
-      "type": "string"
-    },
-    "MONGO_URL": {
-      "description": "MongoDB URL (optional)",
-      "required": false,
-      "type": "string"
-    },
-    "POSTGRES_URL": {
-      "description": "PostgreSQL URL - Recommended (e.g., Supabase)",
-      "required": false,
-      "type": "string"
-    },
-    "MYSQL_URL": {
-      "description": "MySQL URL (optional)",
-      "required": false,
-      "type": "string"
-    },
-    "DB_URL": {
-      "description": "SQLite path (optional)",
-      "required": false,
       "type": "string"
     }
   }

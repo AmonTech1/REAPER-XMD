@@ -15,7 +15,7 @@
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=70&pause=500&color=511080&center=true&width=1150&height=200&lines=PLEASE-FORK-STAR-BOT-REPO" alt="Typing SVG" /></a>
   </div>
-<a><img src='https://i.ibb.co/TMMGw0bH/file-30108.jpg'/></a>ï
+<a><img src='https://h.uguu.se/iGkFGxHY.jpg'/></a>ï
 <!-- 📊 STATS & HERO ANIMATION (Updated Colors) -->
 <div align="center">
 
@@ -70,7 +70,7 @@ Authenticate using **one** of the methods below to generate your `Session ID`.
 
 > 📲 SESSION ID 
 
-[![Get Session ID](https://img.shields.io/badge/Get%20Session%20ID-orange?style=for-the-badge&logo=opencv&logoColor=black)](https://reaper-xmd-session.onrender.com)
+[![Get Session ID](https://img.shields.io/badge/Get%20Session%20ID-orange?style=for-the-badge&logo=opencv&logoColor=black)](https://reaper-xmd-session.zone.id)
 
 <p align="center">
   <img src="https://i.imgur.com/LyHic3i.gif" alt="Authentication Flow Preview" />
